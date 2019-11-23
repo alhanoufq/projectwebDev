@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+  <title> الصفحة الرئيسية </title>
+  <link rel="stylesheet"   herf="style.css">
+<style>
+   .p {
+      text-align:auto;
+   }
+       body {
+    margin: rt1;
+    font-size:20px;
+    padding: 0;
+    font-family: 'Arial', serif;
+  }
+      .container {
+          width: 75%;
+          margin-left:auto;
+          position:relative;
+     }
+
+     header{
+        background-color:none;
+        padding:20px;
+        color:black;
+        text-align:right;
+     }
+     header .header-name {
+          display:flex;
+          justify-content:flex-end;
+          align-item:center;
+          margin:-20px;
+      }
+
+     header .header-name h1 {
+         display: inline-block;
+         padding-right: 80px;
+         font-size:47px;
+         color:#293462;
+
+      }
+
+      header .header-name img {
+      margin:20px 0px 20px 40px;
+      }
+
+  .nav {
+     overflow: hidden;
+     background-color: #1c2938;
+     text-align: center;
+     padding: 14px 0 14px 0;
+     margin-top:0px;
+
+  }
+
+  .nav > li {
+       display: inline-block;
+       padding: 0  50px   0   50px;
+  }
+
+  .nav > li > a {
+       color: #f2f2f2;
+       text-decoration: none;
+       padding: 20px;
+  }
+
+  .nav > li > a:hover {
+       background-color: #ddd;
+       color: black;
+  }
+   .rightblock {
+      float:right;
+      margin-left:5px;
+      margin-top:-20px;
+      width:250px;
+      height:830px;
+      background:none;
+  }
+   .leftblock{
+      float:left;
+      margin-right:5px;
+      margin-top:-20px;
+      width:250px;
+      height:830px;
+      background:none;
+  }
+   .centerblock {
+      width:auto;
+      text-align:right;
+      margin-right:190px;
+      margin-left;190px;
+       background:none;
+  }
+
+   select {
+  width:400px;
+  padding: 16px 130px;
+  border-radius:4px;
+  background-color:#f1f1f1;
+  color:#1c2938;
+  font-size:20px;
+  text-align:center;
+}
+
+  .rcorners {
+  border: 2px solid #cd3f3e;
+  background-color:#ff9c91;
+  padding: 60px;
+  width: 950px;
+  height:670px;
+  margin-left:90px;
+  margin-top:60px;
+
+}
+
+   .collapsible {
+   background-color:#ff9c91;
+  color:#1c2938;
+  cursor: pointer;
+  padding: 18px;
+  width: 150px;
+  height:50px;
+  border: 2px solid #cd3f3e;
+  text-align:center;
+  outline: none;
+  font-size: 20px;
+  margin-right:600px;
+  margin-top:-20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:760px;
+  height:10px;
+  margin-top:7px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 5px;
+  background-color:#f4f6f6;
+  color:#1c2938;
+}
+ .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+   input[type=submit] {
+   width:150px;
+   height:50px;
+  background-color: #1c2938;
+  color: #f4f6f6;
+  padding: 0px;
+  border: none;
+  font-size:20px;
+  margin-right:570px;
+  margin-top:80px;
+}
+
+input[type=submit]:hover {
+  background-color: #cd3f3e;
+  color:#f4f6f6;
+}
+
+  .clear{
+      clear:both;
+  }
+  .footer{
+     background-color:#1c2938;
+     color:#f4f6f6;
+     height:50px;
+     text-align:center;
+     line-height:50px;
+     font-size:18px;
+  }
+
+</style>
+</head>
+<div>
+<!--Header--><header>
+    <div class="container">
+        <div class="header-name">
+            <div class="login"><img src="namelogo.png" alt="logo" width="220" height="90"></div>
+            <img src="logo1.png" alt="logo" width="100" height="90">
+            </div>
+        </div>
+</header>
+
+
+    <ul class="nav">
+        <li><a href="connect us.html"> تواصل معنا</a></li>
+        <li><a href="product order.html"> اطلب هنا </a></li>
+        <li><a href="products page.html"> المنتجات </a></li>
+        <li><a href="brief page.html"> عن موقعنا </a></li>
+        <li><a href="home page.html"> الرئيسية  </a></li>
+   </ul>
+   </div>
+
+    <div class="content">
+<!--right-->    <div class="rightblock"></div>
+<!--left-->    <div class="leftblock"></div>
+
+<!--center-->    <div class="centerblock">
+        <div class="rcorners">
+       <p id="rcorners" > اسم المنتج </p>
+
+        <form>
+  <select id="product" name="product">
+  <option value="au">شنطة لابتوب </option>
+  <option value="ca">شنطة ماركه  </option>
+  <option value="usa">شنطة مكياج </option>
+  </select>
+</form>
+            <p>نوع المنتج</p>
+        <form>
+  <select id="product" name="product">
+  <option value="au">شنطة ظهر  </option>
+  <option value="ca">شنطة يد مسكه </option>
+  <option value="usa">شنط يد </option>
+  </select>
+</form>
+            <p id="rcorners" > كمية المنتج </p>
+        <form>
+  <select id="product" name="product">
+  <option value="au">1 </option>
+  <option value="ca">2  </option>
+  <option value="usa">3 </option>
+  </select>
+</form>
+            <button type="button" class="collapsible"> إضافة منتج </button>
+            <div class="content">
+ <table>
+  <tr>
+    <th> الكميه  </th>
+    <th>سعر المنتج </th>
+    <th> النوع </th>
+      <th> اسم المنتج </th>
+  </tr>
+     <tr>
+    <td>1 </td>
+    <td>180SAR</td>
+    <td>شنطة ظهر </td>
+    <td>شنطة لابتوب  </td>
+     </tr>
+ </table>
+                 <table>
+  <tr>
+    <td>185 SAR  </td>
+    <th>    مع ضريبة القيمة المصافة  </th>
+      </tr>
+     <tr>
+    <td>  180 SAR </td>
+    <th>السعر الكلي </th>
+     </tr>
+ </table>
+                <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+                </div>
+                <input type="submit" value="إرسال الطلب ">
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+<div class="clear"></div>
+
+<div class="footer"> جميع الحقوق محفوظة 2019 </div>
+
+</body>
+</html>

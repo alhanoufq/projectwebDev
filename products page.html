@@ -47,11 +47,20 @@ p {
       }
 
   .nav {
-     background-color: #033453;
+     background-color: #1c2938;
      color: #ffdfdf;
      list-style: none;
      text-align: center;
      padding: 14px 0 14px 0;
+     margin-top:0px;
+  }
+
+  .nav {
+     overflow: hidden;
+     background-color: #1c2938;
+     text-align: center;
+     padding: 14px 0 14px 0;
+
   }
 
   .nav > li {
@@ -60,12 +69,14 @@ p {
   }
 
   .nav > li > a {
+       color: #f2f2f2;
        text-decoration: none;
-       color:white;
+       padding: 20px;
   }
 
   .nav > li > a:hover {
-       color: #6fba01;
+       background-color: #ddd;
+       color: black;
   }
 
 
@@ -142,31 +153,32 @@ p {
      border: 1px solid #CCC;
 
    }
-   .bodymenu {
-        background:#eafbea;
-        border: 1px solid #CCC;
-        padding:20px;
-        font-weight:bold;
-        text-align:right;
-    }
-    select {
-        background:#eafbea;
-        border: 1px solid #CCC;
-        padding:30px;
-        font-weight:bold;
-        font-size:20px;
-        font-align:center;
-        width:250px;
-     }
-     .option {
-        border: 1px solid #CCC;
-     }
+  .bodymenu {
+     background:#eafbea;
+     border: 1px solid #CCC;
+     padding:20px;
+     font-weight:bold;
+     text-align:right;
+ }
+ select {
+     background:#cd3f3e;
+     border: 1px solid #CCC;
+     padding:30px;
+     font-weight:bold;
+     font-size:20px;
+     font-align:center;
+     width:250px;
+     color:#f4f6f6;
+  }
+  .option {
+     border: 1px solid #CCC;
+  }
   .clear{
       clear:both;
   }
   .footer{
-     background-color:#033453;
-     color:white;
+     background-color:#1c2938;
+     color:#f4f6f6;
      height:50px;
      text-align:center;
      line-height:50px;
@@ -179,16 +191,16 @@ p {
 <!--Header--><header>
     <div class="container">
         <div class="header-name">
-            <div class="login"><h1> Acc.lap</h1></div>
-            <img src="logomy.jpg" alt="logo" width="80" height="80">
+            <div class="login"><img src="namelogo.png" alt="logo" width="220" height="90"></div>
+            <img src="logo1.png" alt="logo" width="100" height="90">
             </div>
         </div>
 </header>
 
 
     <ul class="nav">
-        <li><a href="#"> تواصل معنا</a></li>
-        <li><a href="#"> اطلب هنا </a></li>
+        <li><a href="connect us.html"> تواصل معنا</a></li>
+        <li><a href="product order.html"> اطلب هنا </a></li>
         <li><a href="products page.html"> المنتجات </a></li>
         <li><a href="brief page.html"> عن موقعنا </a></li>
         <li><a href="home page.html"> الرئيسية  </a></li>
@@ -198,24 +210,31 @@ p {
     <div class="content">
 <!--right-->    <div class="rightblock">
         <div class="headmenu"> التصنيفات والأنواع </div>
+ <div class="content">
         <div class="select">
-            <select name="slt-1" id="slt-1">
-                <option> شنط </option>
-                <option value="1"> شنطة لابتوب ظهر  </option>
-                <option value="2"> شنطة  لابتوب يد  </option>
-
-            </select>
+        <form>
+  <select id="product" name="product">
+  <option value="au">شنطة لابتوب  </option>
+  <option value="ca">شنطة يد </option>
+  <option value="usa">شنطة مسكة يد </option>
+      <option value="usa">شنطة ظهر </option>
+  </select>
+</form>
         </div>
     <div class="select">
      <select name="slt-1" id="slt-1">
-     <option> ستيكرات </option>
+     <option> شنط ماركات </option>
      </select>
     </div>
 
         <div class="select">
      <select name="slt-1" id="slt-1">
-     <option> اكسسورات آخرى </option>
+     <option> شنط مكياج </option>
      </select>
+    </div>
+    </div>
+
+
     </div>
     </div>
 
